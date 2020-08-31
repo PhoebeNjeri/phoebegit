@@ -1,9 +1,6 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class ReposService {
-
-  constructor() { }
+export class Repos {
+  id: string;
+  name: string;
+  html_url: string;
+  description: string;
 }
