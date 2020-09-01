@@ -12,7 +12,7 @@ export class UserRequestService {
   repository:Repository[];
 
   constructor(private http:HttpClient) {
-    this.user=new User("","","",0,0,0,"",new Date())
+    this.user=new User("",0,0,0, new Date())
    this.repository= []
    }
    userRequest(userInput){
@@ -41,18 +41,14 @@ export class UserRequestService {
       .toPromise()
       .then((response) => {
           this.user.name=response.name
-          this.user.avatar_url=response.avatar_url
-          this.user.location=response.location
           this.user.followers=response.followers
           this.user.following=response.following
           this.user.public_repos=response.public_repos
-          this.user.html_url=response.html_url
 
           resolve()
       },
       error=>{
               this.user.name="Sorry the user name can not be found!"
-              this.user.avatar_url="??????????????????????"
 
               reject(error)
           }

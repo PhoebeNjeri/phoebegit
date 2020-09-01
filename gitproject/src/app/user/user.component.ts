@@ -28,8 +28,8 @@ export class UserComponent implements OnInit {
 }
   ngOnInit() {
     
-      this.usersService.userRequest('Joselyne97')
-      this.usersService.repositoryrequest('Joselyne97')
+      this.usersService.userRequest('PhoebeNjeri')
+      this.usersService.repositoryrequest('PhoebeNjeri')
            
       this.user=this.usersService.user
       this.repository=this.usersService.repository
