@@ -1,7 +1,8 @@
 import { Directive } from './directive';
 
-describe('Directive', () => {
+describe('HighlightDirective', () => {
   it('should create an instance', () => {
-    expect(new Directive()).toBeTruthy();
+    const directive = new Directive();
+    expect(directive).toBeTruthy();
   });
 });

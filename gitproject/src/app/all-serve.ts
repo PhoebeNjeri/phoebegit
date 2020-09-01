@@ -1,2 +1,3 @@
-export class AllServe {
-}
+export class  Allserve {
+    
+    }
