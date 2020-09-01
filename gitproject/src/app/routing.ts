@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import {RouterModule,Routes} from '@angular/router'
 
 
-import { UserComponent } from '../user/user.component';
-import { AboutComponent } from '../about/about.component';
-import { NotFoundComponent } from '../not-found/not-found.component'
+import { UserComponent } from './user/user.component';
+import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component'
 
 
 // Defining routes
