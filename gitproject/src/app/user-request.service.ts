@@ -21,12 +21,9 @@ export class UserRequestService {
     
     interface ApiResponse{
       name:string;
-      avatar_url:string;
-      location:string;
       followers:number;
       following:number;
       public_repos:number;
-      html_url:string;
       
       
      
